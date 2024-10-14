@@ -1,0 +1,45 @@
+.locations {
+  padding: 20px;
+  text-align: center; /* Centre le texte sur la page */
+}
+
+.locations h2 {
+  color: #FF0000; /* Rouge pour le titre */
+  margin-bottom: 20px; /* Espacement en bas du titre */
+}
+
+.locations-container {
+  display: flex;
+  justify-content: space-around; /* Espacement entre les cartes */
+  flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si nécessaire */
+}
+
+.location-card {
+  background-color: #f8f8f8; /* Couleur de fond pour les cartes */
+  border-radius: 10px; /* Coins arrondis pour les cartes */
+  padding: 20px; /* Espacement intérieur */
+  margin: 10px; /* Espace autour des cartes */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  width: 300px; /* Largeur fixe pour les cartes */
+  transition: transform 0.3s; /* Transition pour l'animation */
+}
+
+.location-card:hover {
+  transform: scale(1.05); /* Légère animation au survol */
+}
+
+.location-image {
+  width: 100%; /* Prend toute la largeur de la carte */
+  height: auto; /* Hauteur automatique */
+  border-radius: 10px; /* Coins arrondis pour l'image */
+}
+
+.location-card h3 {
+  color: #FF0000; /* Rouge pour le titre de la carte */
+  margin: 10px 0; /* Espacement autour du titre */
+}
+
+.location-card p {
+  color: #555; /* Couleur gris pour le texte */
+  margin: 5px 0; /* Espacement autour du texte */
+}

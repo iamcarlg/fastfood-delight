@@ -1,0 +1,79 @@
+.cards-section {
+    background-color: #f8f8f8; /* Couleur de fond */
+    padding: 40px;
+    border-radius: 8px;
+    margin: 20px 0; /* Marge en haut et en bas */
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Pour gérer les écrans plus petits */
+  }
+  
+  .card {
+    background-color: #ffffff; /* Fond blanc */
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Ajuster la largeur pour correspondre au design */
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Ombre douce */
+    margin: 15px; /* Espace autour des cartes */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition pour l'animation */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre plus forte au survol */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Coins arrondis pour les images */
+  }
+  
+  .card h3 {
+    color: #FF0000; /* Rouge pour les titres */
+    margin: 10px 0; /* Espacement autour du titre */
+  }
+  
+  .card p {
+    color: #555; /* Couleur gris pour le texte */
+    margin: 10px 0; /* Espacement autour du texte */
+  }
+  
+  .card-button {
+    background-color: #FFDD00; /* Jaune */
+    color: black;
+    border: none;
+    padding: 12px 20px; /* Augmenter le padding pour un aspect plus moderne */
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1rem; /* Taille de la police du bouton */
+    transition: background-color 0.3s, transform 0.3s; /* Ajout d'une transition */
+  }
+  
+  .card-button:hover {
+    background-color: #FFC107; /* Couleur au survol */
+    transform: scale(1.05); /* Légère animation au survol */
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #333; /* Fond du pied de page */
+    color: white;
+    position: relative; /* Positionner le pied de page */
+  }
+  
+  .footer a {
+    color: #FFDD00; /* Couleur jaune pour le lien */
+    text-decoration: none; /* Pas de soulignement */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+  }
+  

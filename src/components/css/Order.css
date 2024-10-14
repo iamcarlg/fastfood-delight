@@ -1,0 +1,125 @@
+.order {
+  padding: 30px;
+  text-align: center; /* Centre le texte sur la page */
+  background: linear-gradient(to right, #ffefba, #ffffff); /* Dégradé de fond moderne */
+  min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+.order h2 {
+  color: #FF0000; /* Rouge pour le titre */
+  margin-bottom: 30px; /* Espacement en bas du titre */
+  font-family: 'Arial', sans-serif; /* Polices modernes */
+  font-size: 2.5rem; /* Taille de police plus grande */
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between; /* Répartit l'espace également */
+  flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si nécessaire */
+  margin-top: 20px; /* Espacement en haut des éléments du menu */
+}
+
+.menu-item {
+  background-color: #ffffff; /* Couleur de fond pour les articles du menu */
+  border-radius: 10px; /* Coins arrondis pour les articles */
+  padding: 20px; /* Espacement intérieur */
+  margin: 15px; /* Espacement autour des articles */
+  width: calc(25% - 30px); /* Largeur pour quatre articles par ligne */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Ombre plus marquée */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition pour l'animation */
+  text-align: left; /* Aligne le texte à gauche */
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); /* Légère élévation au survol */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Ombre plus forte au survol */
+}
+
+.menu-image {
+  width: 100%; /* Prend toute la largeur de la carte */
+  height: auto; /* Hauteur automatique */
+  border-radius: 10px; /* Coins arrondis pour l'image */
+}
+
+.menu-item h3 {
+  color: #333; /* Couleur du titre de l'article */
+  margin: 10px 0; /* Espacement autour du titre */
+  font-size: 1.5rem; /* Taille de la police du titre */
+}
+
+.description {
+  color: #666; /* Couleur gris pour la description */
+  font-size: 1rem; /* Taille de la police pour la description */
+  margin: 5px 0; /* Espacement autour de la description */
+}
+
+.price {
+  color: #FFDD00; /* Jaune pour le prix */
+  font-size: 1.2rem; /* Taille de police pour le prix */
+  margin-top: 10px; /* Espacement en haut du prix */
+}
+
+.menu-button {
+  background-color: #FFDD00; /* Jaune */
+  color: black;
+  border: none;
+  padding: 10px 15px; /* Espacement intérieur */
+  cursor: pointer;
+  border-radius: 5px; /* Coins arrondis pour le bouton */
+  transition: background-color 0.3s; /* Transition pour le survol */
+  margin-top: 10px; /* Espacement au-dessus du bouton */
+}
+
+.menu-button:hover {
+  background-color: #FFC107; /* Couleur au survol */
+}
+
+.order-summary {
+  margin-top: 40px; /* Espacement en haut de la section de résumé */
+  background-color: #ffffff; /* Fond clair pour le résumé */
+  padding: 20px; /* Espacement intérieur */
+  border-radius: 10px; /* Coins arrondis pour le résumé */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.order-summary h3 {
+  color: #FF0000; /* Rouge pour le titre du résumé */
+  margin-bottom: 15px; /* Espacement en bas du titre */
+}
+
+.order-summary ul {
+  list-style: none; /* Supprime les puces */
+  padding: 0; /* Supprime le padding */
+}
+
+.order-summary h4 {
+  color: #555; /* Couleur gris pour le total */
+  margin: 10px 0; /* Espacement autour du total */
+}
+
+.place-order-button {
+  background-color: #FFDD00; /* Jaune */
+  color: black;
+  border: none;
+  padding: 10px 15px; /* Espacement intérieur */
+  cursor: pointer;
+  border-radius: 5px; /* Coins arrondis pour le bouton */
+  transition: background-color 0.3s; /* Transition pour le survol */
+  margin-top: 10px; /* Espacement au-dessus du bouton */
+}
+
+.place-order-button:hover {
+  background-color: #FFC107; /* Couleur au survol */
+}
+
+/* Styles Responsives */
+@media (max-width: 768px) {
+  .menu-items {
+    flex-direction: column; /* Colonne pour les petits écrans */
+    align-items: center; /* Centre les éléments */
+  }
+  
+  .menu-item {
+    width: 90%; /* Prend 90% de la largeur de l'écran */
+  }
+}

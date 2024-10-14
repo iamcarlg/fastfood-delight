@@ -1,0 +1,84 @@
+.header {
+    background: #FF0000; /* Rouge vif */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permet de gérer les petits écrans */
+  }
+  
+  .logo {
+    height: 60px; /* Ajustez la hauteur du logo */
+    margin-left: 10px; /* Ajoutez un peu d'espace à gauche */
+  }
+  
+  .hamburger {
+    display: none; /* Masquer par défaut */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px; /* Taille du bouton hamburger */
+    cursor: pointer;
+  }
+  
+  /* Styles pour le menu */
+  .header nav {
+    flex: 1; /* Permet au nav de prendre l'espace disponible */
+  }
+  
+  .header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aligne les éléments de la liste horizontalement */
+    flex-wrap: wrap; /* Permet de passer à la ligne sur les petits écrans */
+  }
+  
+  .header nav ul li {
+    display: inline; /* Garde les éléments sur la même ligne */
+    margin: 0 15px; /* Espacement entre les éléments */
+  }
+  
+  .header nav ul li a {
+    color: white; /* Couleur du lien */
+    text-decoration: none; /* Pas de soulignement */
+  }
+  
+  /* Styles pour le menu responsive */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block; /* Affiche le bouton hamburger */
+    }
+  
+    .header nav {
+      display: none; /* Masquer le menu par défaut */
+      width: 100%; /* Prend toute la largeur */
+      text-align: center; /* Centrer le texte */
+      position: absolute; /* Positionner le menu */
+      top: 70px; /* Ajustez selon la hauteur de l'en-tête */
+      left: 0;
+      background: #FF0000; /* Fond rouge pour le menu */
+      z-index: 10; /* Assurez-vous que le menu est au-dessus des autres éléments */
+      transition: max-height 0.3s ease-in-out; /* Ajouter une transition */
+      overflow: hidden; /* Masquer le contenu débordant */
+      max-height: 0; /* Initialiser à zéro pour masquer */
+    }
+  
+    .header nav.open {
+      display: block; /* Afficher le menu quand il est ouvert */
+      max-height: 300px; /* Ajustez cette valeur selon le nombre d'éléments de menu */
+    }
+  
+    .header nav ul {
+      flex-direction: column; /* Aligne les éléments verticalement */
+      width: 100%; /* Prend toute la largeur */
+    }
+  
+    .header nav ul li {
+      margin: 5px 0; /* Espace entre les éléments sur les petits écrans */
+      display: block; /* Afficher chaque élément en bloc */
+      padding: 10px 0; /* Ajouter du padding pour les éléments */
+    }
+  }
+  

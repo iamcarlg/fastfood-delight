@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+html, body {
+  height: 100%; /* Prend toute la hauteur de la fenêtre */
+}
+
+
+.header {
+  background: #FF0000; /* Rouge vif */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Hauteur de la section héro */
+  overflow: hidden; /* Pour s'assurer que rien ne déborde */
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Pour que l'image couvre complètement la section */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2; /* S'assurer que le texte est au-dessus de l'image */
+}
+
+.overlay h1 {
+  font-size: 3rem; /* Taille de la police */
+  margin-bottom: 10px; /* Espacement entre le titre et le texte */
+}
+
+.overlay p {
+  font-size: 1.5rem; /* Taille du texte */
+  margin-bottom: 20px; /* Espacement entre le texte et le bouton */
+}
+
+
+.cta-button {
+  background-color: #FFDD00; /* Jaune */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.special-offers {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.special-offer {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 30%;
+}
+
+.menu {
+  padding: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
+}
+
+.footer .social-media a {
+  color: white;
+  margin: 0 10px;
+}

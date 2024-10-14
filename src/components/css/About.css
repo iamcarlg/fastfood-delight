@@ -1,0 +1,53 @@
+.about {
+  padding: 20px;
+  text-align: center; /* Centre le texte sur la page */
+}
+
+.about h2 {
+  color: #FF0000; /* Rouge pour le titre */
+  margin-bottom: 20px; /* Espacement en bas du titre */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre le contenu */
+  margin-bottom: 20px; /* Espacement en bas de la section */
+}
+
+.about-image {
+  width: 80%; /* Largeur de l'image */
+  max-width: 600px; /* Limite maximale de largeur */
+  border-radius: 10px; /* Coins arrondis pour l'image */
+  margin-bottom: 20px; /* Espacement en bas de l'image */
+}
+
+.about p {
+  color: #555; /* Couleur gris pour le texte */
+  margin: 10px 0; /* Espacement autour du texte */
+  line-height: 1.6; /* Hauteur de ligne pour améliorer la lisibilité */
+}
+
+.features {
+  list-style-type: none; /* Supprime les puces */
+  padding: 0;
+  color: #FFDD00; /* Jaune pour les caractéristiques */
+}
+
+.features li {
+  font-size: 1.2rem; /* Taille de police pour les caractéristiques */
+  margin: 10px 0; /* Espacement entre les caractéristiques */
+}
+
+.testimonials {
+  margin-top: 20px; /* Espacement en haut de la section des témoignages */
+  font-style: italic; /* Italique pour les témoignages */
+}
+
+.testimonials blockquote {
+  background: #f0f0f0; /* Fond clair pour les témoignages */
+  padding: 15px; /* Espacement intérieur */
+  border-left: 5px solid #FF0000; /* Bordure à gauche */
+  margin: 10px auto; /* Espacement autour du témoignage */
+  max-width: 600px; /* Limite de largeur pour les témoignages */
+}

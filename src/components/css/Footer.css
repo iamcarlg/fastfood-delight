@@ -1,0 +1,20 @@
+.footer {
+    background-color: #333; /* Couleur de fond du footer */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    padding: 20px; /* Espacement intérieur */
+    position: relative; /* Position relative pour le placement */
+    bottom: 0; /* Positionné en bas */
+
+  }
+  
+  /* Pour s'assurer que le footer reste au bas de la page */
+  .App {
+    display: flex; /* Utilisation du flexbox pour gérer l'agencement */
+    flex-direction: column; /* Aligne les éléments verticalement */
+  }
+  
+  .App > div {
+    flex: 1; /* Permet au contenu de prendre tout l'espace restant */
+  }
+  

@@ -1,0 +1,65 @@
+.contact {
+  padding: 30px;
+  text-align: center; /* Centre le texte sur la page */
+  background: linear-gradient(to right, #ffefba, #ffffff); /* Dégradé de fond moderne */
+  min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+.contact h2 {
+  color: #FF0000; /* Rouge pour le titre */
+  margin-bottom: 30px; /* Espacement en bas du titre */
+  font-family: 'Arial', sans-serif; /* Polices modernes */
+  font-size: 2.5rem; /* Taille de police plus grande */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Organise les champs de manière verticale */
+  align-items: center; /* Centre les éléments */
+  max-width: 500px; /* Limite la largeur du formulaire */
+  margin: 0 auto; /* Centre le formulaire horizontalement */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Prend toute la largeur du conteneur */
+  padding: 10px; /* Espacement intérieur */
+  margin: 10px 0; /* Espacement entre les champs */
+  border: 1px solid #ccc; /* Bordure légère */
+  border-radius: 5px; /* Coins arrondis */
+  transition: border-color 0.3s; /* Transition pour le focus */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #FF0000; /* Bordure rouge au focus */
+  outline: none; /* Supprime le contour par défaut */
+}
+
+.contact-form button {
+  background-color: #FFDD00; /* Jaune */
+  color: black;
+  border: none;
+  padding: 10px 20px; /* Espacement intérieur */
+  cursor: pointer;
+  border-radius: 5px; /* Coins arrondis pour le bouton */
+  transition: background-color 0.3s; /* Transition pour le survol */
+}
+
+.contact-form button:hover {
+  background-color: #FFC107; /* Couleur au survol */
+}
+
+.contact-info {
+  margin-top: 30px; /* Espacement en haut de la section d'informations */
+}
+
+.contact-info h3 {
+  color: #FF0000; /* Rouge pour le titre des informations */
+  margin-bottom: 15px; /* Espacement en bas du titre */
+}
+
+.contact-info p {
+  color: #555; /* Couleur gris pour le texte */
+  margin: 5px 0; /* Espacement autour du texte */
+}
